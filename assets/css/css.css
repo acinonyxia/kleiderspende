@@ -1,0 +1,42 @@
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  }
+
+  #topButton {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(77, 77, 77); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  body {
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .accordion {
+    --bs-accordion-btn-bg: #e5faf7;
+    --bs-accordion-active-bg: #97d1ca;
+    --bs-accordion-active-color: #000000;
+    --bs-accordion-btn-focus-box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+  }
