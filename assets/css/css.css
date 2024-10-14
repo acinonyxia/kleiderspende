@@ -40,3 +40,12 @@ h1, h2, h3, h4 {
   .accordion-button:not(.collapsed) {
     box-shadow: none;
   }
+
+  .btn-primary {
+    --bs-btn-bg: #97d1ca;
+    --bs-btn-border-color:  #97d1ca;
+    --bs-btn-hover-bg: #97d1ca;
+    --bs-btn-hover-border-color: #97d1ca;
+    --bs-btn-active-bg: #97d1ca;
+    --bs-btn-active-border-color: #97d1ca;
+  }

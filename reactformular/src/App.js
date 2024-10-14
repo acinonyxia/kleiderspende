@@ -8,14 +8,14 @@ import FormSelection from './FormSelection';
 function App() {
   return (
     <div className='App'>
-    <Router>
-      <Routes>
-        <Route path="/" element={<FormSelection />} />
-        <Route path="/summary" element={<PickupSummary />} />
-        <Route path="/error" element={<PickupError />} />
-        <Route path="/handoversummary" element={<HandoverSummary />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<FormSelection />} />
+          <Route path="/summary" element={<PickupSummary />} />
+          <Route path="/error" element={<PickupError />} />
+          <Route path="/handoversummary" element={<HandoverSummary />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
