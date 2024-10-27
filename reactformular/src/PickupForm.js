@@ -162,6 +162,7 @@ const PickupForm = () => {
                         <option value="Mittelerde">Mittelerde</option>
                         <option value="Westeros">Westeros</option>
                         <option value="Narnia">Narnia</option>
+                        <option value="Temerien">Temerien</option>
                     </select>
                 </div>
                 <div class="col-md-4 col-sm-10 mb-3">
