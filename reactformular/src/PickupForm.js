@@ -94,9 +94,9 @@ const PickupForm = () => {
         <form class="bg-body-tertiary mb-4 rounded" onSubmit={handleSubmit}>
             <h4>Abholung durch das Sammelfahrzeug</h4>
             <div class="row justify-content-center">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-5 mb-3">
+                        <div class="col-6 mb-3">
                             <label for="salutation" class="form-label">Anrede</label>
                             <select name="salutation" class="form-select" value={formData.salutation} onChange={handleChange}>
                                 <option selected="selected"></option>
@@ -105,19 +105,19 @@ const PickupForm = () => {
                                 <option value="">Divers</option>
                             </select>
                         </div>
-                        <div class="col-md-6 col-sm-5 mb-3">
+                        <div class="col-6 mb-3">
                             <label for="title" class="form-label">Titel</label>
                             <input type="text" name="title" class="form-control" value={formData.title} onChange={handleChange} />
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-10 mb-3">
+                        <div class="col-lg-6 mb-3">
                             <label for="firstName" class="form-label">Vorname *</label>
                             <input type="text" name="firstName" class="form-control" value={formData.firstName} onChange={handleChange} required />
                         </div>
-                        <div class="col-md-6 col-sm-10 mb-3">
+                        <div class="col-lg-6 mb-3">
                             <label for="lastName" class="form-label">Nachname *</label>
                             <input type="text" name="lastName" class="form-control" value={formData.lastName} onChange={handleChange} required />
                         </div>
@@ -125,27 +125,27 @@ const PickupForm = () => {
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-9 col-sm-8 mb-3">
+                <div class="col-9 mb-3">
                     <label for="street" class="form-label">Straße *</label>
                     <input type="text" name="street" class="form-control" value={formData.street} onChange={handleChange} required />
                 </div>
-                <div class="col-md-3 col-sm-2 mb-3">
+                <div class="col-3 mb-3">
                     <label for="housenumber" class="form-label">Hausnr. *</label>
                     <input type="text" name="housenumber" class="form-control" value={formData.housenumber} onChange={handleChange} required />
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-3 col-sm-10 mb-3">
+                <div class="col-lg-3 mb-3">
                     <label for="postalCode" class="form-label">PLZ *</label>
                     <input type="text" name="postalCode" class="form-control" value={formData.postalCode} onChange={handleChange} required />
                 </div>
-                <div class="col-md-9 col-sm-10 mb-3">
+                <div class="col-lg-9 mb-3">
                     <label for="city" class="form-label">Ort *</label>
                     <input type="text" name="city" class="form-control" value={formData.city} onChange={handleChange} required />
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-10 mb-3">
+                <div class="col-lg-4 mb-3">
                     <label for="clothingType" class="form-label">Art der Kleidungsstücke</label>
                     <select name="clothingType" class="form-select" defaultValue="Nicht ausgewählt" value={formData.clothingType} onChange={handleChange}>
                         <option value="Nicht ausgewählt">Bitte wählen</option>
@@ -155,7 +155,7 @@ const PickupForm = () => {
                         <option value="Heimtextilien">Heimtextilien</option>
                     </select>
                 </div>
-                <div class="col-md-4 col-sm-10 mb-3">
+                <div class="col-lg-4 mb-3">
                     <label for="region" class="form-label">Krisenregion</label>
                     <select name="region" class="form-select" defaultValue="Nicht ausgewählt" value={formData.region} onChange={handleChange}>
                         <option value="Nicht ausgewählt">Bitte wählen</option>
@@ -165,7 +165,7 @@ const PickupForm = () => {
                         <option value="Temerien">Temerien</option>
                     </select>
                 </div>
-                <div class="col-md-4 col-sm-10 mb-3">
+                <div class="col-lg-4 mb-3">
                     <label class="form-label mb-2">Abholtermin auswählen *</label><br />
                     <DatePicker
                         className="form-control w-100"
@@ -187,7 +187,7 @@ const PickupForm = () => {
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-12 col-sm-10 mb-3">
+                <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="dsgvoCheck" required />
                         <label class="form-check-label" for="dsgvoCheck">

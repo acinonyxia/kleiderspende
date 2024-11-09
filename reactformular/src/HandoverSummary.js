@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { format } from 'date-fns';
 
 const HandoverSummary = () => {
   const { state } = useLocation();
@@ -20,7 +19,7 @@ const HandoverSummary = () => {
         <strong>Name:</strong> {salutation} {title} {firstName} {lastName}  <br />
         <strong>Art der Kleidung:</strong> {clothingType} <br />
         <strong>Gewählte Krisenregion:</strong> {region} <br />
-        <strong>Datum und Uhrzeit:</strong> {format(new Date(timestamp), 'dd.MM.yyyy HH:mm')} Uhr <br />
+        <strong>Datum und Uhrzeit:</strong> {timestamp} Uhr <br />
       </div>
       <button class="form-control" onClick={handleBackClick}>Zurück</button>
     </div>

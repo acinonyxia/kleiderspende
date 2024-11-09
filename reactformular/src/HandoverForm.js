@@ -33,9 +33,9 @@ const HandoverForm = () => {
         <form class="bg-body-tertiary mb-4 rounded" onSubmit={handleSubmit}>
             <h4>Abgabe in der Geschäftsstelle</h4>
             <div class="row justify-content-center">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-5 mb-3">
+                        <div class="col-6 mb-3">
                             <label for="salutation" class="form-label">Anrede</label>
                             <select name="salutation" class="form-select" value={formData.salutation} onChange={handleChange}>
                                 <option selected="selected"></option>
@@ -44,19 +44,19 @@ const HandoverForm = () => {
                                 <option value="">Divers</option>
                             </select>
                         </div>
-                        <div class="col-md-6 col-sm-5 mb-3">
+                        <div class="col-6 mb-3">
                             <label for="title" class="form-label">Titel</label>
                             <input type="text" name="title" class="form-control" value={formData.title} onChange={handleChange} />
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-lg-8">
                     <div class="row justify-content-center">
-                        <div class="col-md-6 col-sm-10 mb-3">
+                        <div class="col-lg-6 mb-3">
                             <label for="firstName" class="form-label">Vorname *</label>
                             <input type="text" name="firstName" class="form-control" value={formData.firstName} onChange={handleChange} required />
                         </div>
-                        <div class="col-md-6 col-sm-10 mb-3">
+                        <div class="col-lg-6 mb-3">
                             <label for="lastName" class="form-label">Nachname *</label>
                             <input type="text" name="lastName" class="form-control" value={formData.lastName} onChange={handleChange} required />
                         </div>
@@ -64,7 +64,7 @@ const HandoverForm = () => {
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-10 mb-3">
+                <div class="col-lg-6 mb-3">
                     <label for="clothingType" class="form-label">Art der Kleidungsstücke</label>
                     <select name="clothingType" class="form-select" defaultValue="Nicht ausgewählt" value={formData.clothingType} onChange={handleChange}>
                         <option value="Nicht ausgewählt">Bitte wählen</option>
@@ -74,7 +74,7 @@ const HandoverForm = () => {
                         <option value="Heimtextilien">Heimtextilien</option>
                     </select>
                 </div>
-                <div class="col-md-6 col-sm-10 mb-3">
+                <div class="col-lg-6 mb-3">
                     <label for="region" class="form-label">Krisenregion</label>
                     <select name="region" class="form-select" defaultValue="Nicht ausgewählt" value={formData.region} onChange={handleChange}>
                         <option value="Nicht ausgewählt">Bitte wählen</option>
@@ -86,7 +86,7 @@ const HandoverForm = () => {
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-12 col-sm-10 mb-3">
+                <div class="mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="dsgvoCheck" required />
                         <label class="form-check-label" for="dsgvoCheck">

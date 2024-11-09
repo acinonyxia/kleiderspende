@@ -22,10 +22,9 @@ const PickupSummary = () => {
         <strong>Ort:</strong> {postalCode} {city}  <br />
         <strong>Art der Kleidung:</strong> {clothingType} <br />
         <strong>Gewählte Krisenregion:</strong> {region} <br />
-        <strong>Gewählte Abholzeit:</strong> {format(new Date(selectedDate), 'dd.MM.yyyy HH:mm')}<br />
-        <strong>Datum und Uhrzeit der Übertragung:</strong> {format(new Date(timestamp), 'dd.MM.yyyy HH:mm')} <br />
+        <strong>Gewählte Abholzeit:</strong> {format(new Date(selectedDate), 'dd.MM.yyyy HH:mm')} Uhr <br />
+        <strong>Datum und Uhrzeit der Übertragung:</strong> {timestamp} Uhr <br />
       </div>
-      <p>Bitte stelle deine Spende pünktlich zum nächsten Abholtermin an den Straßenrand.</p>
       <button class="form-control" onClick={handleBackClick}>Zurück</button>
     </div>
   );
